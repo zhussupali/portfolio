@@ -1,0 +1,84 @@
+@background-color : rgb(24, 24, 24);
+@color1: white;
+@color2: rgb(214, 104, 0);
+@font: 'SF Mono', monospace;
+
+body {
+    background-color: @background-color;
+    font-family: @font;
+    color: @color1;
+}
+
+div {
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    user-select: none; 
+  }
+
+.box {
+    margin: auto;
+    width: 50%;
+    display:block;
+    text-align: center;
+
+    h1 {
+        .border-bottom
+    }
+
+    .congratulate{
+        display: none;
+    }
+    
+    #toggle {
+        display: none;
+    }
+
+    h3 {
+        color: @color2;
+    }
+}
+
+.border-bottom {
+    border-bottom: solid 1px lighten(@background-color, 50%);
+}
+
+// text mixin
+
+.text-color(@text-color) when (lightness(@text-color)>=50) {
+    color: @color2;
+}
+
+.text-color(@text-color) when (lightness(@text-color)<50) {
+    color: @color1;
+}
+
+.btn {
+    background-color: @color2;
+    font-size: large;
+    margin: 40px;
+    .text-color(@color2);
+    .bordered(5px, white);
+}
+.btn:hover{
+    background-color:white;
+    .text-color(white);
+    .bordered(5px, @color2);
+    cursor: pointer;
+}
+
+.bordered(@w @c) {
+    border: solid @w @c;
+}
+
+// loop
+#toggle:checked + .congratulate {
+    .c(5);
+    display: inline;
+}
+
+.c(@count) when (@count>0){
+    .c(@count - 1);
+    .congratulate@{count} {
+        display: inline;
+    }
+}
