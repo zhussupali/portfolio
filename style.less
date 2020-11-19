@@ -1,12 +1,13 @@
-@background-color : rgb(24, 24, 24);
+@background-color : rgb(15, 15, 15);
 @color1: white;
-@color2: rgb(214, 104, 0);
+@color2: rgb(219, 106, 0);
 @font: 'SF Mono', monospace;
 
 body {
     background-color: @background-color;
     font-family: @font;
     color: @color1;
+    margin: 0;
 }
 
 div {
@@ -33,13 +34,13 @@ div {
         display: none;
     }
 
-    h3 {
+    .orange-text {
         color: @color2;
     }
 }
 
 .border-bottom {
-    border-bottom: solid 1px lighten(@background-color, 50%);
+    border-bottom: solid 1px lighten(@color1, 50%);
 }
 
 // text mixin
@@ -72,7 +73,7 @@ div {
 
 // loop
 #toggle:checked + .congratulate {
-    .c(5);
+    .c(3);
     display: inline;
 }
 
