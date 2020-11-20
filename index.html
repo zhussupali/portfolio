@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
     <script src="//cdn.jsdelivr.net/npm/less" ></script>
     <link rel="stylesheet/less" type="text/css" href="style.less" />
+
+    <!-- ion-icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
@@ -19,13 +23,23 @@
             <label for="toggle"><div class = "btn">Contacts</div></label>
             <input type = "checkbox" name = "" id = "toggle">
             <div class = "congratulate">
-            <div class = "congratulate1"><h3>Phone number: <a href="tel:707-987-1456">8 (707) 987-14-56</a></h3></div>
-            <div class = "congratulate2"><h3>Email address: <a href="mailto:zhussupali@gmail.com">zhussupali@gmail.com</a></h3></div>
-            <div class = "congratulate3"><h3>Everywhere: <a href="https://www.instagram.com/zhussupali/">@zhussupali</a></h3></div>
+            <div class = "congratulate1"><h3><a href="tel:707-987-1456">8(707)987-14-56</a></h3></div>
+            <div class = "congratulate2"><h3><a href="mailto:zhussupali@gmail.com">zhussupali@gmail.com</a></h3></div>
+            <div class = "congratulate3"><h3>
+                <a href="tel:707-987-1456"><ion-icon name="phone-portrait-outline"></ion-icon> </a>
+                <a href="mailto:zhussupali@gmail.com"><ion-icon name="mail-open-outline"></ion-icon> </a>
+                <a href="https://github.com/zhussupali"><ion-icon name="logo-github"></ion-icon> </a>
+                <a href="https://twitter.com/zhussupali"><ion-icon name="logo-twitter"></ion-icon> </a>
+                <a href="https://t.me/zhussupali"><ion-icon name="paper-plane-outline"></ion-icon> </a>
+                <a href="https://wa.me/77079871456"><ion-icon name="logo-whatsapp"></ion-icon> </a>
+                <a href="https://instagram.com/zhussupali"><ion-icon name="logo-instagram"></ion-icon></a>
+            </h3></div>
         </div>
     </div>
     
     </div> 
+
+    <div class="box"></div>
 
 
 </body>

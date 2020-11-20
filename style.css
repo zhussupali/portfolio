@@ -12,6 +12,7 @@ div {
 .box {
   margin: auto;
   width: 50%;
+  min-width: 500px;
   display: block;
   text-align: center;
 }
@@ -60,6 +61,12 @@ div {
 
 
 
+h3 {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
 a:link {
   text-decoration: none;
   color: white;
@@ -67,6 +74,10 @@ a:link {
 
 a {
   color: white;
+}
+
+a:hover{
+  color: #db6a00;
 }
 
 .banner {
@@ -82,6 +93,3 @@ a {
   border-bottom: solid #181818 5px;
 }
 
-.box {
-  padding-top: 0px;
-}
