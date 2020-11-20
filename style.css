@@ -1,6 +1,6 @@
 body {
   background-color: #0f0f0f;
-  font-family: 'SF Mono', monospace;
+  font-family: "SFMono-Regular", monospace;
   color: #ffffff;
   margin: 0;
 }
@@ -12,7 +12,6 @@ div {
 .box {
   margin: auto;
   width: 50%;
-  min-width: 425px;
   display: block;
   text-align: center;
 }
@@ -27,6 +26,7 @@ div {
 }
 .box .orange-text {
   color: #db6a00;
+  margin: 30px;
 }
 .border-bottom {
   border-bottom: solid 1px #ffffff;
@@ -37,6 +37,10 @@ div {
   margin: 40px;
   color: #ffffff;
   border: solid 5px #ffffff;
+  width: 50%;
+  margin: auto;
+  padding: 5px;
+  text-align: center;
 }
 .btn:hover {
   background-color: white;
@@ -49,22 +53,52 @@ div {
 }
 #toggle:checked + .congratulate .congratulate1 {
   display: inline;
+  margin: 20px;
 }
 #toggle:checked + .congratulate .congratulate2 {
   display: inline;
+  margin: 20px;
 }
 #toggle:checked + .congratulate .congratulate3 {
   display: inline;
+  margin: 20px;
 }
 
 
 
+
+
+
+
+@media (max-width: 700px) {
+  .box {
+    width: 100%;
+  }
+  .box .btn {
+    width: 100px;
+    margin: auto;
+  }
+  .box h1 {
+    width: 70%;
+    margin: auto;
+  }
+
+  .orange-text {
+    margin: 30px;
+  }
+}
+
+
+
+
+
+
+/* CSS */
 
 
 h3 {
   margin: auto;
-  width: 50%;
-  padding: 10px;
+  width: 100%;
 }
 
 a:link {
@@ -92,4 +126,6 @@ a:hover{
   display: table-cell;
   border-bottom: solid #181818 5px;
 }
+
+
 
