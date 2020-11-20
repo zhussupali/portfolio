@@ -12,7 +12,7 @@ div {
 .box {
   margin: auto;
   width: 50%;
-  min-width: 500px;
+  min-width: 425px;
   display: block;
   text-align: center;
 }
