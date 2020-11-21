@@ -5,14 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
-
-    <script src="//cdn.jsdelivr.net/npm/less" ></script>
-    <link rel="stylesheet/less" type="text/css" href="style.less" />
-
-    <!-- ion-icon -->
-    <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel = "stylesheet" href = "css/slick.css">
+    <link rel="stylesheet/less" type="text/css" href="css/style.less" />
+    <link rel="stylesheet" href="css/slick-theme.css">
 </head>
 
 <body>
@@ -39,9 +35,28 @@
     
     </div> 
 
-    <div class="box"></div>
+<div class="main">
+    <div class="tableview">
+        <div class = "slider-area" onload = "load()">
+            <div class = "slider-img">
+                <img src="images/app1.png" alt="" width="200px">
+                <img src="images/app2.png" alt="" width="200px">
+                <img src="images/app3.png" alt="" width="200px">
+            </div>
+        </div>
+        
+    </div>
+
+</div>
 
 
+
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+<script src = "js/slick.js"></script>
+<script src="js/custom.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+<script src="//cdn.jsdelivr.net/npm/less"></script>
 </body>
 
 </html>
