@@ -131,8 +131,22 @@ a:hover{
   /* background-color: #db6a00; */
 }
 
+.background .slider-area {
+  border: solid 3px white;
+   width: 300px;
+}
 
-@media (max-width: 980px) {
+.tableview h4 {
+  width: 85%;
+  margin: auto;
+
+}
+
+.tableview img {
+  margin-top: 30px;
+}
+
+@media (max-width: 900px) {
   .box {
     width: 100%;
   }
@@ -153,8 +167,21 @@ a:hover{
   }
 
   .tableview {
+    margin: auto;
     display: block;
   }
+
+  .main {
+
+    width: fit-content;
+  }
+
+
+  .background .slider-area {
+    border: solid 3px white;
+     width: 250px;
+  }
+  
 }
 
 
