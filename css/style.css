@@ -29,7 +29,7 @@ div {
   margin: 30px;
 }
 
-.orange-background:hover img {
+.orange-background img:hover {
   background-color: #db6a00;
 }
 
